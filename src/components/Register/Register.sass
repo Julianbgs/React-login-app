@@ -1,4 +1,4 @@
-.Login
+.Register
   position: relative
   display: flex
   justify-content: center
@@ -10,32 +10,32 @@
   background-repeat: no-repeat
   background-position: center
 
-.Login__Wrap
+.Register__Wrap
   position: relative
   display: flex
   align-items: center
   justify-content: center
   flex-direction: column
   width: 400px
-  height: 250px
+  height: 300px
   padding: 20px
   opacity: 1
   z-index: 1
 
 
   &:hover
-    .Login__Description
+    .Register__Description
       color: #000000
 
-    .Login__Register
+    .Register__Login
       color: rgba(255, 0, 0, 0.8)
 
-    .Login__Input
+    .Register__Input
       border: 1px solid rgba(0, 0, 255, 0.5)
       border-radius: 10px
 
     &::before
-     opacity: 1
+      opacity: 1
 
   &::before
     content: ''
@@ -54,7 +54,7 @@
 
 
 
-.Login__Input
+.Register__Input
   width: 350px
   height: 40px
   padding-left: 20px
@@ -66,7 +66,7 @@
   &::placeholder
     color: rgba(0, 0, 0, 0.7)
 
-.Login__Submit
+.Register__Submit
   display: flex
   align-items: center
   justify-content: center
@@ -82,14 +82,14 @@
   border-radius: 10px
   outline: none
 
-.Login__Description
+.Register__Description
   color: #ffffff
   font-family: 'Montserrat', sans-serif
   font-size: 12px
   font-weight: 300
   letter-spacing: 1px
 
-.Login__Register
+.Register__Login
   padding-left: 5px
   color: rgba(0, 0, 0, 0.8)
   font-family: 'Montserrat', sans-serif
