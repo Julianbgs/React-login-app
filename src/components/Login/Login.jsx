@@ -10,16 +10,15 @@ const INITIAL_STATE = {
   error: null,
 };
 
-const LoginPage = () => {
+const LoginPage = ({allowedRoute}) => {
   return(
-    <LoginForm />
+    <LoginForm alowedRoute={allowedRoute}/>
   );
 };
 
 class Login extends React.Component {
   constructor(props) {
     super(props);
-
     this.state = { ...INITIAL_STATE };
   }
 
@@ -78,7 +77,7 @@ class Login extends React.Component {
   }
 }
 
-const LoginForm = withRouter(withFirebase(Login));
+const LoginForm = withRouter(withFirebase(Login ));
 
 
 export default LoginPage;

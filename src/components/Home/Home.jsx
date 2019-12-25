@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {withFirebase} from '../Firebase';
 import UserList from '../UserList/UserList';
+import LogOut from '../LogOut/LogOut';
 
 import './Home.sass';
 
@@ -41,6 +42,7 @@ class Home extends Component {
         <h1 className="Home__Title">Dashboard</h1>
         {loading && <div>Loading ...</div>}
         <UserList users={users} />
+        <LogOut/>
       </div>
     );
   }
